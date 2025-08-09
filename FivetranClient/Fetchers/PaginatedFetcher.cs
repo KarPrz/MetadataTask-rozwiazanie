@@ -7,6 +7,7 @@ namespace FivetranClient.Fetchers;
 
 public sealed class PaginatedFetcher(HttpRequestHandler requestHandler) : BaseFetcher(requestHandler)
 {
+    // Maybe set by dedicated method?
     private const ushort PageSize = 100;
 
     public IAsyncEnumerable<T> FetchItemsAsync<T>(string endpoint, CancellationToken cancellationToken)
