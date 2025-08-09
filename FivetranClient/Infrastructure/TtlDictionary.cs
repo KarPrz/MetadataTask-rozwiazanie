@@ -24,7 +24,6 @@ public class TtlDictionary<TKey, TValue> where TKey : notnull
     //    return value;
     //}
 
-
     // The name of this method could be confusing as it is the same as name for generic dict method.
     //public bool TryGetValue(TKey key, out TValue value)
     //{
